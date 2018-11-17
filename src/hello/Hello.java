@@ -19,8 +19,6 @@ public class Hello {
         return -1;
     }
 
-
-    
     public static void main(String[] args) {
         
         List<String> stringList = new ArrayList();
