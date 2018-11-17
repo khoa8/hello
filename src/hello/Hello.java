@@ -30,7 +30,8 @@ public class Hello {
         numberList.add(1);
         numberList.add(2);
         String s1 = "CC";
-        int num = 2;
+        int num1 = 2;
+        int num2 = 0;
         
         if (Hello.linearSearch(stringList, s -> s.equals(s1)) == -1)
             System.out.println(s1 + " is not found on the list");
@@ -40,9 +41,13 @@ public class Hello {
             System.out.println("AA is not found on the list.");
         else System.out.println("AA is found at the index " + Hello.linearSearch(stringList, s -> s.equals("AA")));
         
-        if (Hello.linearSearch(numberList, s -> s.equals(num)) == -1)
-            System.out.println(num + " is not found on the list.");
-        else System.out.println(num + " is found at the index " + Hello.linearSearch(numberList, s -> s.equals(num)));
+        if (Hello.linearSearch(numberList, s -> s.equals(num1)) == -1)
+            System.out.println(num1 + " is not found on the list.");
+        else System.out.println(num1 + " is found at the index " + Hello.linearSearch(numberList, s -> s.equals(num1)));
+        
+        if (Hello.linearSearch(numberList, s -> s.equals(num2)) == -1)
+            System.out.println(num2 + " is not found on the list.");
+        else System.out.println(num2 + " is found at the index " + Hello.linearSearch(numberList, s -> s.equals(num2)));
         
     }
     
